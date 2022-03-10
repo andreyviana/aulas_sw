@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario e notas</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .botao{
+            background-color: rgba(36, 36, 155, 0.5);
+            margin: 0 auto;
+            display: block;
+            border-radius: 15%;
+            height: 100px;
+            weight: 500px;
+        
+        }
+
+        input{
+            weight: 500px;
+            height: 50px;
+            border-radius: 30%;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="processamento.php" method="POST">
+        <p>
+            nome
+            <input type="text" name="nome">
+        </p>
+        <p>
+            nota 1
+            <input type="text" name="n1">
+        </p>
+        <p>
+            nota 2
+            <input type="text" name="n2">
+        </p>
+        <p>
+            nota 3
+            <input type="text" name="n3">
+        </p>
+        <input type="submit" value="MÉDIA" class="botao">
+    </form>
+</body>
+</html>
